@@ -1,0 +1,21 @@
+09:45:02 | WARNING | src.llm_client | No ANTHROPIC_API_KEY found — falling back to MockLLMClient (offline demo mode)
+09:45:02 | INFO    | src.tools.web_search | WebSearchTool using provider: duckduckgo
+09:45:02 | INFO    | src.agent | === New run === GOAL: Research the current landscape of small modular nuclear reactors (SMRs) and summarize key players, timelines, and challenges
+09:45:02 | INFO    | src.planner | Generated plan with 2 step(s)
+09:45:02 | INFO    | src.planner |   Step 1: Gather background facts about: GOAL: Research the current landscape of small modular nuclear reactors (SMRs) an
+09:45:02 | INFO    | src.planner |   Step 2: Identify recent developments / current state
+09:45:02 | WARNING | src.tools.web_search | Search provider 'duckduckgo' failed (403 Client Error: Forbidden for url: https://html.duckduckgo.com/html/); falling back to mock.
+09:45:02 | INFO    | src.executor | Step 1 -> tool `web_search`({'query': 'STEP: Gather background facts about: GOAL: Research the curr'})
+09:45:02 | INFO    | src.executor | Step 1 finished after 2 iteration(s)
+09:45:02 | WARNING | src.tools.web_search | Search provider 'duckduckgo' failed (403 Client Error: Forbidden for url: https://html.duckduckgo.com/html/); falling back to mock.
+09:45:02 | INFO    | src.executor | Step 2 -> tool `web_search`({'query': 'STEP: Identify recent developments / current state'})
+09:45:02 | INFO    | src.executor | Step 2 finished after 2 iteration(s)
+09:45:02 | INFO    | src.agent | === Run complete ===
+
+======================================================================
+# Mock Final Report
+
+This is a mock, offline synthesis of all step findings (no API key was configured).
+======================================================================
+
+Full report saved to: examples/sample_run_output.md
